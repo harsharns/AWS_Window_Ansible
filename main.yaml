@@ -1,0 +1,12 @@
+---
+- name: "Windows Updates"
+  hosts: web
+  tasks:
+    - name: Install Windows updates
+      win_updates:
+        category_names:
+         - SecurityUpdates
+         - CriticalUpdates
+         - UpdateRollups
+         - DefinitionUpdates
+        reboot: yes
