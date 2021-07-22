@@ -1,13 +1,12 @@
 [web]
 host
-
 [web:vars]
-ansible_user: host-user
+ansible_user=windowsusr
 
-ansible_password: host-password
+ansible_password=adminpasscode
 
-ansible_port: 5986
+ansible_port=5986
 
-ansible_connection: winrm
+ansible_connection=winrm
 
-ansible_winrm_server_cert_validation: ignore
+ansible_winrm_server_cert_validation=ignore
